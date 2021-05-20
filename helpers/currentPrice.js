@@ -7,7 +7,7 @@ module.exports = async () => {
             return {
                 error: false,
                 data: {
-                    BTC: response.data,
+                    BTC: response.data.bid,
                 }
             }
          } catch (error) {

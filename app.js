@@ -1,15 +1,15 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+
+// item routes
 
 // initialize express instance
 const app = express();
+app.use(bodyParser.json());
 
-const PORT = process.env.PORT || 5000;
-app.use(express.json());
+// endpoint routes
 
-app.get('/', (req, res) => {
-    return res.json({ status: "Up and running"});
-})
-
-app.listen(PORT, () => {
-    console.log("server started and listening!");
+// Server running
+app.listen('5000', () => {
+    console.log('Server started on port 5000')
 })

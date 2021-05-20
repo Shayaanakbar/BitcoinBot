@@ -1,3 +1,6 @@
+const currentPrice = require("../helpers/currentPrice");
+const { errorObject } = require('../config');
+
 exports.CurrentPrice = async (req, res) => {
     try {
         let prices = await currentPrice();

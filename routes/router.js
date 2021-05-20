@@ -1,9 +1,9 @@
 const express = require("express");
+const Router = express.Router();
 
-const router = express.Router();
+// Controller for Current Prices
+const Controller = require('../controllers/controllers');
 
-const Contoller = require('../controllers/controllers');
+Router.get("/prices", Controller.CurrentPrice);
 
-router.get("/prices", Contoller.CurrentPrice);
-
-module.exports = router;
+module.exports = Router;

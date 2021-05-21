@@ -7,7 +7,7 @@ price of bitcoin as it hits an variance of .01% increasing or decreasing.
 For this, I understand that you'll need to have this skills:
 
 Javascript: Intermediate
-<br>
+
 NodeJS: Intermediate
 
 Terminal: Intermediate
@@ -74,6 +74,7 @@ UpholdTakeHome/
 Docker & Dockerfile
 Docker is an excellent container image manager and did the system isolation work for me. 
 I just made a simple Dockerfile, See Below:
+
 
 #Dockerfile
 FROM node:16.1.0

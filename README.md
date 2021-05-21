@@ -37,7 +37,7 @@ npm :
 
 npm install npm@latest -g
 
-Installation
+#Installation
 Register at SendGrid and create an API KEY.
 
 #Clone the repo :
@@ -51,17 +51,30 @@ Start the server :
 npm start
 
 #Docker & Dockerfile
+
 Docker is an excellent container image manager and did the system isolation work for me. 
+
 I just made a simple Dockerfile, See Below:
 
+
 #Dockerfile
+
 FROM node:16.1.0
+
 RUN mkdir -p /opt/app
+
 WORKDIR /opt/app
+
 RUN adduser app
+
 COPY pricebook/ .
+
 RUN npm install
+
 RUN chown -R app /opt/app
+
 USER app
+
 EXPOSE 3000
+
 CMD ["npm", "run", "pm2"]

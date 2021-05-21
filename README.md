@@ -77,6 +77,7 @@ I just made a simple Dockerfile, See Below:
 
 
 #Dockerfile
+
 FROM node:16.1.0
 RUN mkdir -p /opt/app
 WORKDIR /opt/app

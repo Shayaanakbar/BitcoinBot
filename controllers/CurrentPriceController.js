@@ -12,7 +12,7 @@ const CurrentPriceController = () => {
             } catch (error) {
                 console.log(error)
             }
-        }
+        },
     }
 }
 

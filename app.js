@@ -33,6 +33,7 @@ app.listen(PORT, async () => {
     const fetchOnInterval = async () => {
         // do next request
         const currentPrice = await CurrentPriceController().getCurrentPrice();
+        // current temp Price turned into a Number
         let currentTempPrice = parseInt(currentPrice.data.BTC)
         console.log(currentTempPrice);
         if (tempPrice < currentTempPrice * .9999) { // .01% variance decreasing

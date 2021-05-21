@@ -2,13 +2,15 @@ const Sequilize = require('sequelize');
 const db = require('../db');
 
 const Alert = db.define('alert', {
-    title: {
-        type: Sequilize.STRING,
-    },
-    title: {
+    id: {
         type: Sequilize.NUMBER,
     },
-    title: {
+    alert: {
         type: Sequilize.NUMBER,
+    },
+    createdAt: {
+        type: Sequilize.DATE,
     },
 })
+
+module.exports = Alert;

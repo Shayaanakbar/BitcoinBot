@@ -50,41 +50,31 @@ Start the server :
 
 npm start
 
-UpholdTakeHome/
-├── README.md
-├── Dockerfile
-├── docker-compose.yml
-├── pricebook
-│   ├── controllers
-│   ├── db
-│   └── helpers
-├── pricebook files (controllers folder)
-│   ├── CurrentPriceController.js
-│   └── sendAlertsController.js
-├── pricebook files (db folder)
-│   ├── models folder
-│   ├── Alerts.js
-│   └── db.js
-├── pricebook files (helpers)
-│   ├── currentPrice.js
-│   └── config.js
-├── processes.json
-└── LICENSE
-
 Docker & Dockerfile
+
 Docker is an excellent container image manager and did the system isolation work for me. 
+
 I just made a simple Dockerfile, See Below:
 
 
 #Dockerfile
 
 FROM node:16.1.0
+
 RUN mkdir -p /opt/app
+
 WORKDIR /opt/app
+
 RUN adduser app
+
 COPY pricebook/ .
+
 RUN npm install
+
 RUN chown -R app /opt/app
+
 USER app
+
 EXPOSE 3000
+
 CMD ["npm", "run", "pm2"]

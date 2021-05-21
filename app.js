@@ -10,7 +10,7 @@ db.authenticate()
     .catch(err => console.log('Error ' + err))
 
 // Price Controllers
-const CurrentPriceController = require("./controllers/controllers")
+const CurrentPriceController = require("./controllers/CurrentPriceController")
 
 // initialize express instance
 const app = express();
@@ -34,4 +34,3 @@ app.listen(PORT, () => {
     }
     fetchOnInterval();
 });
-

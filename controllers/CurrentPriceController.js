@@ -1,3 +1,4 @@
+// API fetching current price
 const  { fetchCurrentPrice } = require("../helpers/currentPrice")
 
 // Current price controllers
@@ -13,11 +14,6 @@ const CurrentPriceController = () => {
             }
         }
     }
-}
-
-// Create Alerts Controller
-const getAlertsController = async () => {
-
 }
 
 module.exports = CurrentPriceController;

@@ -44,9 +44,11 @@ Register at SendGrid and create an API KEY.
 **Clone the repo : **
 
 git clone https://github.com/Shayaanakbar/UpholdTakeHome
+
 Install dependencies (use sudo if required) :
 
 npm install
+
 Start the server :
 
 npm start

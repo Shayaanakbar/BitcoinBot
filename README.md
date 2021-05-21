@@ -28,8 +28,8 @@ SendGrid: for sending notifications via Email
 
 postgres: database storage
 
-#Prerequisites
-#To run this project, you'll need to have the following installed:
+# Prerequisites
+To run this project, you'll need to have the following installed:
 
 Node.js : https://nodejs.org
 

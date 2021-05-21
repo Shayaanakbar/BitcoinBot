@@ -16,7 +16,7 @@ postgres: Intermediate
 
 Docker: Intermediate
 
-#The technologies used to make the model application was:
+**This text will be bold** The technologies used to make the model application was:
 
 Node: as language
 

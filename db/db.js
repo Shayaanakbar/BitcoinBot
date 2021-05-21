@@ -1,6 +1,7 @@
 // initialize Sequilize
 const Sequilize = require('sequelize');
 
+// Sequilize set up for postgres
 module.exports = new Sequilize('bitcoindb', 'postgres', 'nu40mpseofa', {
     host: 'localhost',
     dialect: 'postgres',

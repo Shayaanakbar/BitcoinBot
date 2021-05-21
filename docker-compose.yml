@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: nu40mpseofa
+    ports:
+      - '5431:5431'
+    volumes:
+      - pricebook-db:/var/lib/postgresql/
+
+  addressbook:
+    build:
+      context: .
+    environment:
+      DB_SCHEMA: bitcoindb
+      DB_USER: postgres
+      DB_PASSWORD: nu40mpseofa
+      DB_HOST: postgres
+    depends_on:
+      - postgres
+    ports:
+      - '3000:3000'
+
+volumes:
+  pricebook-db:

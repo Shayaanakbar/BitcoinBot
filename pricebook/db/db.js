@@ -5,6 +5,7 @@ const Sequilize = require('sequelize');
 module.exports = new Sequilize('bitcoindb', 'postgres', 'nu40mpseofa', {
     host: 'localhost',
     dialect: 'postgres',
+    port: '5431',
     pool: {
         max: 5,
         min: 0,

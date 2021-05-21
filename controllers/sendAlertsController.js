@@ -4,7 +4,7 @@ const sgMail = require('@sendgrid/mail')
 const sendAlertController = () => {
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     const msg = {
-        to: 'Shayaanakbar1106@gmail.com', // Change to your recipient
+        to: 'shayaanakbar@yahoo.co,', // Change to your recipient
         from: 'Shayaanakbar1106@gmail.com', // Change to your verified sender
         subject: 'Bitcoin hit bot price',
         text: 'Bot has hit .01% Variance',

@@ -16,7 +16,7 @@ postgres: Intermediate
 
 Docker: Intermediate
 
-The technologies used to make the model application was:
+#The technologies used to make the model application was:
 
 Node: as language
 
@@ -28,8 +28,8 @@ SendGrid: for sending notifications via Email
 
 postgres: database storage
 
-Prerequisites
-To run this project, you'll need to have the following installed:
+#Prerequisites
+#To run this project, you'll need to have the following installed:
 
 Node.js : https://nodejs.org
 
@@ -37,10 +37,10 @@ npm :
 
 npm install npm@latest -g
 
-Installation
+#Installation
 Register at SendGrid and create an API KEY.
 
-Clone the repo :
+#Clone the repo :
 
 git clone https://github.com/Shayaanakbar/UpholdTakeHome
 Install dependencies (use sudo if required) :
@@ -50,7 +50,7 @@ Start the server :
 
 npm start
 
-Docker & Dockerfile
+#Docker & Dockerfile
 
 Docker is an excellent container image manager and did the system isolation work for me. 
 

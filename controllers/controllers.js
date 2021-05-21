@@ -15,4 +15,9 @@ const CurrentPriceController = () => {
     }
 }
 
+// Create Alerts Controller
+const getAlertsController = async () => {
+
+}
+
 module.exports = CurrentPriceController;

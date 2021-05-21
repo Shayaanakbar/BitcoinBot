@@ -1,4 +1,3 @@
-
 // error object for controllers
 module.exports = {
 

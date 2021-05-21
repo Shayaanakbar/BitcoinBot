@@ -1,15 +1,18 @@
-const currentPrice = require("../helpers/currentPrice");
-const { errorObject } = require('../config');
+const  { fetchCurrentPrice } = require("../helpers/currentPrice")
 
-exports.CurrentPrice = async (req, res) => {
-    try {
-        let prices = await currentPrice();
-        if (prices.error) return res.status(500).json(errorObject);
-        return res.status(200).json({
-            success: true,
-            price_data: prices.data,
-        });
-    } catch (error) {
-        return res.status(500).json(errorObject);
+// Current price controllers
+const CurrentPriceController = () => {
+    return {
+        getCurrentPrice: async () => {
+            try {
+                let prices = await fetchCurrentPrice();
+                // make this return price fetched
+                return prices
+            } catch (error) {
+                console.log(error)
+            }
+        }
     }
-};
+}
+
+module.exports = CurrentPriceController;

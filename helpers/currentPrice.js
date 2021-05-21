@@ -1,18 +1,17 @@
 const axios = require("axios");
 
-module.exports = async () => {
+exports.fetchCurrentPrice = async () => {
     try {
-            let url = "https://api.uphold.com/v0/ticker/BTCUSD";
-            const response = await axios.get(url);
-            return {
-                error: false,
-                data: {
-                    BTC: response.data.bid,
-                }
+        let url = "https://api.uphold.com/v0/ticker/BTCUSD";
+        const response = await axios.get(url);
+        return {
+            data: {
+                BTC: response.data.bid,
             }
-         } catch (error) {
-            return {
-                error: true
-            };
         }
+    } catch (error) {
+        return {
+            error: true
+        };
     }
+}

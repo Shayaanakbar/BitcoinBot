@@ -7,17 +7,25 @@ price of bitcoin as it hits an variance of .01% increasing or decreasing.
 For this, I understand that you'll need to have this skills:
 
 Javascript: Intermediate
+<br>
 NodeJS: Intermediate
+
 Terminal: Intermediate
+
 postgres: Intermediate 
+
 Docker: Intermediate
 
 The technologies used to make the model application was:
 
 Node: as language
+
 Node: as web framework
+
 Docker: for image/container creation
+
 SendGrid: for sending notifications via Email
+
 postgres: database storage
 
 Prerequisites
@@ -69,14 +77,10 @@ I just made a simple Dockerfile, See Below:
 
 #Dockerfile
 FROM node:16.1.0
-# Make Directory 
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
-# Create user 
 RUN adduser app
-# copy Pricebook files
 COPY pricebook/ .
-# Npm install 
 RUN npm install
 RUN chown -R app /opt/app
 USER app

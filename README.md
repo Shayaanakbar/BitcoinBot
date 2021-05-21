@@ -3,8 +3,8 @@
 Shayaan Akbar, May 21 2021
 
 **This project is a simple example on how to deploy a bot we created to detect the 
-price of bitcoin as it hits an variance of .01% increasing or decreasing.
-For this, I understand that you'll need to have this skills: **
+price of bitcoin as it hits a variance of .01% increasing or decreasing.
+For this, I understand that you'll need to have these skills: **
 
 Javascript: Intermediate
 
@@ -81,3 +81,4 @@ USER app
 EXPOSE 3000
 
 CMD ["npm", "run", "pm2"]
+

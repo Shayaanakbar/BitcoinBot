@@ -2,7 +2,7 @@
 const express = require('express');
 
 // Database
-const db = require('./db/db')
+const db = require('./pricebook/db/db')
 
 // Test DB
 db.authenticate()
@@ -10,10 +10,10 @@ db.authenticate()
     .catch(err => console.log('Error ' + err))
 
 // Price Controllers
-const CurrentPriceController = require("./controllers/CurrentPriceController")
+const CurrentPriceController = require("./pricebook/controllers/CurrentPriceController")
 
 // Aert Controllers
-const sendAlertsController = require("./controllers/sendAlertsController")
+const sendAlertsController = require("./pricebook/controllers/sendAlertsController")
 
 // initialize express instance
 const app = express();

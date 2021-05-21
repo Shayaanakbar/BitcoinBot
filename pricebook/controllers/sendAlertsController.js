@@ -10,7 +10,6 @@ const sendAlertController = () => {
         to: 'shayaanakbar@yahoo.com,', // Change to your recipient
         from: 'Shayaanakbar1106@gmail.com', // Change to your verified sender
         subject: 'Bitcoin hit bot price',
-        // create method to render Current price and send it in text
         text: 'Bot has hit .01% Variance',
         html: '<strong>and easy to do anywhere, even with Node.js</strong>',
     }

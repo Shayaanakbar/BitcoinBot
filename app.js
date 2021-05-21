@@ -1,6 +1,14 @@
 // express middleware
 const express = require('express');
 
+// Database
+const db = require('./db/db')
+
+// Test DB
+db.authenticate()
+    .then(() => console.log("Database Connected..."))
+    .catch(err => console.log('Error ' + err))
+
 // Price Controllers
 const CurrentPriceController = require("./controllers/controllers")
 

@@ -7,7 +7,7 @@ price of bitcoin as it hits an variance of .01% increasing or decreasing.
 For this, I understand that you'll need to have this skills:
 
 Javascript: Intermediate
-<br>
+
 NodeJS: Intermediate
 
 Terminal: Intermediate
@@ -16,7 +16,7 @@ postgres: Intermediate
 
 Docker: Intermediate
 
-The technologies used to make the model application was:
+#The technologies used to make the model application was:
 
 Node: as language
 
@@ -28,7 +28,7 @@ SendGrid: for sending notifications via Email
 
 postgres: database storage
 
-Prerequisites
+# Prerequisites
 To run this project, you'll need to have the following installed:
 
 Node.js : https://nodejs.org
@@ -40,7 +40,7 @@ npm install npm@latest -g
 Installation
 Register at SendGrid and create an API KEY.
 
-Clone the repo :
+#Clone the repo :
 
 git clone https://github.com/Shayaanakbar/UpholdTakeHome
 Install dependencies (use sudo if required) :
@@ -50,28 +50,7 @@ Start the server :
 
 npm start
 
-UpholdTakeHome/
-├── README.md
-├── Dockerfile
-├── docker-compose.yml
-├── pricebook
-│   ├── controllers
-│   ├── db
-│   └── helpers
-├── pricebook files (controllers folder)
-│   ├── CurrentPriceController.js
-│   └── sendAlertsController.js
-├── pricebook files (db folder)
-│   ├── models folder
-│   ├── Alerts.js
-│   └── db.js
-├── pricebook files (helpers)
-│   ├── currentPrice.js
-│   └── config.js
-├── processes.json
-└── LICENSE
-
-Docker & Dockerfile
+#Docker & Dockerfile
 Docker is an excellent container image manager and did the system isolation work for me. 
 I just made a simple Dockerfile, See Below:
 

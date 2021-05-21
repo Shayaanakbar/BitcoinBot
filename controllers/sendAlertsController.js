@@ -1,5 +1,6 @@
 const sgMail = require('@sendgrid/mail')
 
+// Send Alert for SendGrid API
 const sendAlertController = () => {
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     const msg = {
